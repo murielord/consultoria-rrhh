@@ -23,7 +23,7 @@ h1{
     margin-top: 120px;
 } 
 .h2index{
-    font-size: 40px;
+    font-size: map-get($font-size,title );
     text-align: center;
     font-weight: 400;
     color:$color-principal;
@@ -38,7 +38,7 @@ h1{
 p{
     text-align: center;
     margin: 30px 120px 15px 120px;
-    font-size: 20px;
+    font-size: map-get($font-size,subtitle );
     letter-spacing: 1px;
     font-weight: 300;
     line-height: 30px;
@@ -53,30 +53,29 @@ p{
 }
 input{
     background-color:rgba(19, 109, 79, 0.618);
-    font-size: 15px;
+    font-size: map-get($font-size,texts);
     width: 200px;
     height: 50px;
     border-radius: 10px;
     color:$color-principal
 }
 input:hover{
-    transform:scale(1.2);
-    transition: all 0.5s;
+    @include botones-hover;
 }
 @media (max-width: 576px){
     .h1Mobile {
-        font-size: 40px;
+        font-size: map-get($font-size,title);
         padding-bottom:px;
        
     }
     .h2Mobile{
-        font-size: 20px;
+        font-size: map-get($font-size,subtitle);
         margin:50px 0;
     }
     .pMobile{        
         margin: 10px 10px;
         padding: 20px;
-        font-size:20px;
+        font-size:map-get($font-size,subtitle);
         line-height: 30px;
     }
     .input{

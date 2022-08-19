@@ -220,7 +220,7 @@ input:hover {
 .mainS .h2S {
   font-weight: 300;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 10px;
   padding-left: 30px;
   text-transform: uppercase;
@@ -349,16 +349,22 @@ fieldset {
   width: 800px;
 }
 .form:hover {
-  transition-delay: 0.5;
-  transition: all 2s;
+  transform: scale(1.2);
+  transition: all 0.5s;
   color: black;
   font-size: 20px;
 }
 
-.button {
+.button, .button--send:hover {
   margin: 50px 0 32px 0;
   justify-self: end;
   color: #f0f8ff;
+}
+
+.button--send:hover {
+  font-weight: 600;
+  transform: scale(1.2);
+  transition: all 0.5s;
 }
 
 /*---------------- RESPONSIVE ----------------*/
@@ -374,7 +380,7 @@ fieldset {
   fieldset .mensaje {
     height: 70px;
   }
-  fieldset .button {
+  fieldset .button, fieldset .button--send:hover {
     margin-top: 80px;
   }
 }

@@ -1,6 +1,6 @@
 
 .h1QS{
-    font-size: 40px;
+    font-size: map-get($font-size,title);
 }
 .QS{
     font-weight: 300;
@@ -21,7 +21,7 @@
     padding:20px 0;
 
     .subtitleQS{
-        font-size: 15px;
+        font-size: map-get($font-size,texts);
         font-weight: 500;
         align-self: center;
         padding: 0 0 20px 10px;
@@ -51,7 +51,7 @@
 
 @media (max-width: 576px){
     .pQS{
-        font-size: 15px;
+        font-size: map-get($font-size,texts);
     
     }
     .containerQS{   
@@ -75,7 +75,7 @@
     .text{
         margin: 0;
         padding-right: 5px;
-        font-size:15px;
+        font-size:map-get($font-size,texts);
         line-height: 15PX;
         justify-self: center;
     
