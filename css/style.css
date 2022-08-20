@@ -32,7 +32,7 @@
   .navbar {
     padding: 0;
   }
-  .navbar .nav-link {
+  .navbar .nav-item .nav-link {
     color: darkblue;
   }
   .navbar .radial {
@@ -179,6 +179,7 @@ input:hover {
 @media (max-width: 576px) {
   .pQS {
     font-size: 15px;
+    margin-top: 30px;
   }
   .containerQS {
     margin: 30px 5px;
@@ -235,7 +236,7 @@ input:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
-  margin-bottom: 63px;
+  margin-bottom: 65px;
 }
 .mainS .nav_listS .nav_itemsS {
   font-weight: 300;
@@ -322,7 +323,7 @@ input:hover {
     max-height: 75%;
   }
   .footerE {
-    padding-top: 90px;
+    padding-top: 115px;
   }
 }
 .h1C {
@@ -381,7 +382,7 @@ fieldset {
     height: 70px;
   }
   fieldset .button, fieldset .button--send:hover {
-    margin-top: 80px;
+    margin-top: 100px;
   }
 }
 footer {
