@@ -6,9 +6,9 @@
         font-size: map-get($font-size,title);
         margin-top: 126px;
     }
-    .pservice{
+    .pMobile{
         font-weight: 300;
-        line-height: 2;
+        line-height: 1.5;
 
     }
     .h2S{
@@ -72,5 +72,23 @@
                 font-size: map-get($font-size,texts);
             }
         }
+    }
+}
+@media (min-width:577px) and (max-width:1180px){
+    .mainS{
+        .h1S{
+            font-size:map-get($font-size,big);
+        }
+        .h2S{
+            font-size:map-get($font-size,title)-5;
+        }
+        .nav_listS{
+            font-size:map-get($font-size,subtitle)+2;
+            padding:20px;
+            margin-bottom: 0px;
+        }
+    }
+    .footerS{
+        margin-top:0px;
     }
 }

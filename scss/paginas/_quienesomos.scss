@@ -56,7 +56,8 @@
     
     }
     .containerQS{   
-    margin:30px 5px;
+    margin:0px 5px;
+    padding:30px 10px;
     grid-template-columns: 1fr auto;
     grid-template-rows: repeat(3,80px);
     grid-row-gap: 1px;
@@ -67,7 +68,7 @@
 
     .subtitleQS{    
     font-size: 10px;
-    padding-top: 5px;
+    padding:10px;
     font-weight: 400;
     align-self: flex-start;
  
@@ -75,7 +76,7 @@
 
     .text{
         margin: 0;
-        padding-right: 5px;
+        padding: 15px;
         font-size:map-get($font-size,texts);
         line-height: 15PX;
         justify-self: center;
@@ -83,5 +84,36 @@
     }
     .footerQS{
         margin-top: 110px;
+    }
+}
+@media (min-width:577px) and (max-width:1180px){
+    .h1QS{
+        font-size: map-get($font-size,big);
+    }
+    .pQS{
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+    .containerQS{
+        padding:50px 10px;
+        margin: 10px;
+        height: auto;
+        grid-row-gap: 90px;
+
+        .subtitleQS{
+            font-size: map-get($font-size,subtitle)+5px;
+        }
+        .text{
+            margin: 20px 10px;
+            padding:20px;
+            font-weight: 400;
+            line-height: 35px;
+            font-size: map-get($font-size,subtitle)+5px;
+            
+        }
+    }
+    .footerQS{
+            margin-top:75px;
+        
     }
 }

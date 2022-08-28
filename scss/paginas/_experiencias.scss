@@ -30,6 +30,9 @@
         .iconsE{
             height: 70px;
             width: auto;
+            &:hover{
+                @include botones-hover;
+            }
         }
         .borders{
             border-radius: 40px;
@@ -53,16 +56,37 @@
             padding: 50px 20px 20px 20px; 
             margin-bottom:0;    
             
-                .iconsE{
-                    max-width: 90%;
-                    max-height: 75%;
-                }
+            .iconsE{
+                max-width: 90%;
+                max-height: 75%;
             }   
         }   
+    }   
     .footerE{
-        padding-top: 115px;
+        padding-top:47px;
     }
 }
+@media (min-width:577px) and (max-width:1180px){
+    .mainE{
+        .h1E{
+           font-size:map-get($font-size,big);
+        }
+        .h2E{
+            margin-top:100px;
+            font-size:map-get($font-size,title)-5;
+        }
+        .imgE{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-row-gap: 120px;
+            .iconsE{
+                margin: 30px 0px;
+            }
+        }
+    }
+}
+
 
 
 
