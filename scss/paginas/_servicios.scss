@@ -73,11 +73,18 @@
             }
         }
     }
+    .footerS{
+        margin-top:50px;
+    }
 }
 @media (min-width:577px) and (max-width:1180px){
     .mainS{
         .h1S{
             font-size:map-get($font-size,big);
+        }
+        .pMobile{
+            font-size:map-get($font-size,medium);
+            font-weight: 500;
         }
         .h2S{
             font-size:map-get($font-size,title)-5;

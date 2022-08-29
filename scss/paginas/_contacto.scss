@@ -62,6 +62,9 @@ fieldset{
             margin-top:100px;
         }
     }
+    .footerC{
+        margin-top:20px;
+    }
 }
 @media (min-width:577px) and (max-width:1180px){
     .h1C{
@@ -76,22 +79,22 @@ fieldset{
         
         legend{
             font-size: map-get($font-size, title);
+            text-align: center;
+        }
+        label{
+            margin:10px;
+            padding:0;
         }
         .form{
             width: 700px;
             height: 50px;
         }
         .mensaje{
-            height: 70px;
+            height: 110px;
         }
-        input{
-            .button{
-                margin-top:100px;
-            }
-            .button--send{
-                font-size: map-get($font-size,title);
-                
-            }
+        .button--send{
+            font-size: map-get($font-size,medium);
+            margin-top:100px;
         }
     }
 }

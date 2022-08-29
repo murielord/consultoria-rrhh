@@ -75,15 +75,14 @@ input:hover{
     .pMobile{        
         margin: 10px 10px;
         padding: 20px;
-        font-size:map-get($font-size,subtitle);
+        font-size:map-get($font-size,subtitle)-5;
         line-height: 30px;
     }
     .input{
         display:grid;
         grid-row-gap: 40px;
         margin-bottom: 30px;
-    }
-    
+    }    
 }
 @media (min-width: 577px) and (max-width: 1180px){
     .h1Mobile {

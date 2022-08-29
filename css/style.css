@@ -34,6 +34,7 @@
   }
   .navbar .nav-item .nav-link {
     color: darkblue;
+    font-size: 20px;
   }
   .navbar .radial {
     margin-left: 5px;
@@ -121,7 +122,7 @@ input:hover {
   .pMobile {
     margin: 10px 10px;
     padding: 20px;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
   }
   .input {
@@ -212,30 +213,32 @@ input:hover {
     margin-top: 30px;
   }
   .containerQS {
-    margin: 0px 5px;
+    margin: 10px 10px;
     padding: 30px 10px;
     grid-template-columns: 1fr auto;
     grid-template-rows: repeat(3, 80px);
-    grid-row-gap: 1px;
+    grid-row-gap: 40px;
     justify-items: center;
     line-height: 0;
     height: auto;
   }
-  .subtitleQS {
-    font-size: 10px;
+  .containerQS .subtitleQS {
+    font-size: 30px --5px;
     padding: 10px;
     font-weight: 400;
     align-self: flex-start;
   }
-  .text {
-    margin: 0;
-    padding: 15px;
+  .containerQS .text {
+    margin: 15px 0px;
+    padding: 5px;
+    font-weight: 500;
     font-size: 15px;
-    line-height: 15PX;
+    line-height: 20px;
     justify-self: center;
+    align-content: space-between;
   }
   .footerQS {
-    margin-top: 110px;
+    margin-top: 35px;
   }
 }
 @media (min-width: 577px) and (max-width: 1180px) {
@@ -245,6 +248,7 @@ input:hover {
   .pQS {
     line-height: 40px;
     margin-bottom: 50px;
+    font-size: 30px;
   }
   .containerQS {
     padding: 50px 10px;
@@ -330,10 +334,17 @@ input:hover {
   .mainS .nav_listS .nav_itemsS {
     font-size: 15px;
   }
+  .footerS {
+    margin-top: 50px;
+  }
 }
 @media (min-width: 577px) and (max-width: 1180px) {
   .mainS .h1S {
     font-size: 60px;
+  }
+  .mainS .pMobile {
+    font-size: 30px;
+    font-weight: 500;
   }
   .mainS .h2S {
     font-size: 35px;
@@ -481,6 +492,9 @@ fieldset {
   fieldset .button, fieldset .button--send:hover {
     margin-top: 100px;
   }
+  .footerC {
+    margin-top: 20px;
+  }
 }
 @media (min-width: 577px) and (max-width: 1180px) {
   .h1C {
@@ -495,19 +509,22 @@ fieldset {
   }
   fieldset legend {
     font-size: 40px;
+    text-align: center;
+  }
+  fieldset label {
+    margin: 10px;
+    padding: 0;
   }
   fieldset .form {
     width: 700px;
     height: 50px;
   }
   fieldset .mensaje {
-    height: 70px;
+    height: 110px;
   }
-  fieldset input .button, fieldset input .button--send:hover {
+  fieldset .button--send {
+    font-size: 30px;
     margin-top: 100px;
-  }
-  fieldset input .button--send {
-    font-size: 40px;
   }
 }
 footer {
@@ -520,4 +537,10 @@ footer .footer_icons {
   margin: 10px 20px 30px 20px;
   width: 30px;
   height: 30px;
+}
+
+@media (max-width: 576px) {
+  footer {
+    margin-top: 75px;
+  }
 }/*# sourceMappingURL=style.css.map */

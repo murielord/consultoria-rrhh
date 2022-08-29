@@ -42,6 +42,7 @@
         
             .nav-link{
                 color:darkblue;
+                font-size: map-get($font-size,subtitle);
             }
         }
         .radial{
