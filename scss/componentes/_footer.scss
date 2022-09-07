@@ -17,3 +17,8 @@ footer{
         margin-top:75px;
     }
 }
+@media (min-width: 350px) and (max-width:1180px){
+    footer{
+        margin-top:0;
+    }
+}

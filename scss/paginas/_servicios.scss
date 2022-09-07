@@ -48,11 +48,14 @@
 @media(max-width:576px){
     .mainS{
 
+        .h1Mobile{
+            margin-top:10px;
+        }
         .pMobile{
             font-size: map-get($font-size,texts);
             padding:0;
         }
-
+        
         .h2Mobile{
             margin:5px 0;
         }

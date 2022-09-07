@@ -28,9 +28,18 @@
   text-transform: capitalize;
 }
 
+@media (max-width: 576px) {
+  .navbar {
+    position: sticky;
+  }
+  .h1Mobile {
+    margin-top: 10px;
+  }
+}
 @media (min-width: 350px) and (max-width: 1180px) {
   .navbar {
     padding: 0;
+    position: sticky;
   }
   .navbar .nav-item .nav-link {
     color: darkblue;
@@ -50,7 +59,6 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagenes/chess.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-color: rgba(132, 77, 22, 0.8);
   font-family: "Raleway", sans-serif;
   font-weight: 100;
@@ -71,12 +79,6 @@ h1 {
   font-weight: 400;
   color: #f0f8ff;
   margin-top: 40px;
-}
-
-.h2Mobile:hover {
-  transform: scale(1.1);
-  transition: all 0.5s;
-  font-weight: 500;
 }
 
 p {
@@ -150,7 +152,7 @@ input:hover {
   .input {
     display: grid;
     grid-row-gap: 60px;
-    margin-top: 70px;
+    margin-top: 30px;
     padding-bottom: 50px;
   }
   .input input {
@@ -313,6 +315,9 @@ input:hover {
 
 /*---------------- RESPONSIVE ----------------*/
 @media (max-width: 576px) {
+  .mainS .h1Mobile {
+    margin-top: 10px;
+  }
   .mainS .pMobile {
     font-size: 15px;
     padding: 0;
@@ -400,6 +405,9 @@ input:hover {
 
 /*---------------- RESPONSIVE ----------------*/
 @media (max-width: 576px) {
+  .h1E {
+    margin-top: 10px;
+  }
   .mainE .imgE {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -490,10 +498,10 @@ fieldset {
     height: 70px;
   }
   fieldset .button, fieldset .button--send:hover {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .footerC {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 @media (min-width: 577px) and (max-width: 1180px) {
@@ -542,5 +550,10 @@ footer .footer_icons {
 @media (max-width: 576px) {
   footer {
     margin-top: 75px;
+  }
+}
+@media (min-width: 350px) and (max-width: 1180px) {
+  footer {
+    margin-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */
