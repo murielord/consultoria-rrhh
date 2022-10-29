@@ -108,8 +108,8 @@ input {
 }
 
 input:hover {
-  transform: scale(1.2);
-  transition: all 0.5s;
+  transform: scale(1.1);
+  transition: all 0.4s;
 }
 
 @media (max-width: 576px) {
@@ -203,7 +203,6 @@ input:hover {
 .containerQS .text:hover {
   transform: scale(1.1);
   transition: all 0.3s;
-  color: rgb(60, 238, 244);
   font-weight: 400;
 }
 
@@ -391,8 +390,8 @@ input:hover {
   width: auto;
 }
 .mainE .imgE .iconsE:hover {
-  transform: scale(1.2);
-  transition: all 0.5s;
+  transform: scale(1.1);
+  transition: all 0.4s;
 }
 .mainE .imgE .borders {
   border-radius: 40px;
@@ -441,6 +440,33 @@ input:hover {
     margin: 30px 0px;
   }
 }
+.pres {
+  font-size: 40px;
+  margin-top: 110px;
+}
+
+#presupuesto {
+  margin: 20px 250px 0px 350px;
+  padding: 10px 20px 5px 30px;
+  font-weight: 300;
+  color: #f0f8ff;
+  font-size: 15px;
+  border-color: rgba(58, 207, 157, 0.8823529412);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(1, 1fr);
+  grid-row-gap: 10px;
+  align-items: center;
+}
+
+.buttonP {
+  margin-top: 30px;
+  align-self: center;
+  justify-self: end;
+  color: #f0f8ff;
+}
+
 .h1C {
   font-size: 40px;
 }
@@ -454,9 +480,9 @@ fieldset {
   border-color: rgba(58, 207, 157, 0.8823529412);
   border-radius: 10px;
   display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 4px;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(1, 1fr);
+  grid-row-gap: 10px;
   align-items: center;
 }
 
@@ -465,14 +491,13 @@ fieldset {
   width: 800px;
 }
 .form:hover {
-  transform: scale(1.2);
-  transition: all 0.5s;
-  color: black;
+  transform: scale(1.1);
+  transition: all 0.4s;
   font-size: 20px;
 }
 
 .button, .button--send:hover {
-  margin: 50px 0 32px 0;
+  margin: 50px 0 15px 0;
   justify-self: end;
   color: #f0f8ff;
 }

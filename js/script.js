@@ -166,7 +166,7 @@
 // console.log(cliente)
 
 
-// // HIGH ORDER FUNCTION + Métodos includes
+// // HIGH ORDER FUNCTION + Métodos includes, filter, Math
 
 
 // Suponiendo que los datos de varios clientes ya han sido ingresados
@@ -186,7 +186,7 @@
 //     servicio: 'Asesoría Personal',
 //     modalidad: 'Horas',
 //     cantidad: 12 ,
-//     monto: 54000,
+// total: 54000,
 //     },
 
 //     {
@@ -194,28 +194,28 @@
 //     servicio: 'Asesoría Personal',
 //     modalidad: 'Horas',
 //     cantidad: 8 ,
-//     monto: 36000,
+//     total: 36000,
 //     },
 
 //     {id:3,
 //     servicio: 'Asesoría Empresarial',
 //     modalidad: 'Mes',
 //     cantidad: 3 ,
-//     monto: 195000,
+//     total: 195000,
 //     },
 
 //     {id:4,
 //     servicio: 'Asesoría Empresarial',
 //     modalidad: 'Mes',
 //     cantidad: 6 ,
-//     monto: 390000,
+//     total: 390000,
 //     },
 
 //     {id:5,
 //     servicio: 'Asesoría Personal',
 //     modalidad: 'Mes',
 //     cantidad: 3, 
-//     monto: 105000,
+//     total: 105000,
 //     }
 // ]
 
@@ -253,3 +253,8 @@
 // // Monto más bajo a cobrar
 
 // console.log(Math.min(...montos))
+
+
+
+
+
