@@ -127,7 +127,8 @@ console.log(localStorage.getItem('Cliente'))
 
 
 
-
+// Esto sería en caso de necesitar recorrer el array y solicitar sólo un elemento
+// Cuando ya tenga varios alojados en el localStorage
 
 // for (let i = 0; i>localStorage.lenght; i++){
 
@@ -137,5 +138,7 @@ console.log(localStorage.getItem('Cliente'))
 
 //     console.log(`Clave: ${key} - Valor: ${valor}`)
 // }
+
+
 
 
