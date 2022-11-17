@@ -1,0 +1,34 @@
+[
+    {
+        "nombre": "Paula",
+        "email": "paula@gmail.com",
+        "servicio": "Asesoría Personal",
+        "modalidad": "Mes",
+        "cantidad": 3,
+        "montoTotal": 105000 
+    },
+    {
+        "nombre": "Andrés",
+        "email": "andres@gmail.com",
+        "servicio": "Asesoría Empresarial",
+        "modalidad": "Mes",
+        "cantidad": 6,
+        "montoTotal": 490000 
+    },
+    {
+        "nombre": "Esteban",
+        "email": "esteban@gmail.com",
+        "servicio": "Asesoría Personal",
+        "modalidad": "Hora",
+        "cantidad": 15,
+        "montoTotal": 67500 
+    },
+    {
+        "nombre": "Sofía",
+        "email": "sofia@gmail.com",
+        "servicio": "Asesoría Empresarial",
+        "modalidad": "Mensual",
+        "cantidad": 8,
+        "montoTotal": 560000 
+    }
+]

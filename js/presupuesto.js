@@ -18,6 +18,8 @@
 
 let inputNombrePresupuesto = document.getElementById('nombrePresupuesto')
 
+let inputEmail = document.getElementById('email')
+
 let inputServicio = document.getElementById('servicio')
 
 let inputModalidad = document.getElementById('modalidad')
@@ -33,7 +35,13 @@ const clientesPresupuesto = []
 
 
 inputNombrePresupuesto.addEventListener('change', () => {
+
     clientesPresupuesto.push('Nombre: '+inputNombrePresupuesto.value)
+})
+
+inputEmail.addEventListener('change', () => {
+
+    clientesPresupuesto.push('E-mail: '+inputEmail.value)
 })
 
 inputServicio.addEventListener('change',() => {
@@ -63,8 +71,8 @@ inputCalcular.addEventListener('click',(event) => {
 
     let valorHoraPersona=4500;
     let valorMesPersona= 35000;
-    let valorHoraEmpresa=7000;
-    let valorMesEmpresa= 65000;
+    let valorHoraEmpresa=8000;
+    let valorMesEmpresa= 70000;
 
     let totalPersonaHora= inputCantidad.value*valorHoraPersona;
     let totalPersonaMes= inputCantidad.value*valorMesPersona;
@@ -76,33 +84,59 @@ inputCalcular.addEventListener('click',(event) => {
         
         clientesPresupuesto.push('Monto total: $'+totalPersonaHora)
 
-    alert(`El monto aproximado por su asesoría es de $ ${totalPersonaHora}`)
+        Swal.fire({
+            icon: 'success',
+            title: `El monto aproximado por su asesoría es de $ ${totalPersonaHora}`,
+            text:'En su correo recibirá el detalle de su consulta. ¡Muchas gracias por confiar en nosotros!',
+            showConfirmButton: true,
+            
+          })
 
     } else if((inputServicio.value === ('Asesoría Personal' || 'Asesoria Perosnal' || 'asesoría personal' || 'asesoria personal' || 'asesoría Personal' || 'Asesoría personal' || 'Asesoria personal'|| 'ASESORIA PERSONAL'||'ASESORÍA PERSONAL'))
     && inputModalidad.value === ('Mes' || 'mes'|| 'MES')){
         
         clientesPresupuesto.push('Monto total: $'+totalPersonaMes)
 
-    alert(`El monto aproximado por su asesoría es de $ ${totalPersonaMes}`)
+        Swal.fire({
+            icon: 'success',
+            title: `El monto aproximado por su asesoría es de $ ${totalPersonaMes}`,
+            text:'En su correo recibirá el detalle de su consulta. ¡Muchas gracias por confiar en nosotros!',
+            showConfirmButton: true,
+            
+          })
 
     } else if ((inputServicio.value === ('Asesoría Empresarial' || 'Asesoria Empresarial' || 'asesoría empresarial' || 'asesoria empresarial' || 'asesoría Empresarial' || 'Asesoría empresarial' || 'Asesoria empresarial'|| 'ASESORIA EMPRESARIAL'||'ASESORÍA EMPRESARIAL'))
     && inputModalidad.value === ('Hora' || 'hora'|| 'HORA')){
         
         clientesPresupuesto.push('Monto total: $'+totalEmpresaHora)
 
-    alert(`El monto aproximado por su asesoría es de $ ${totalEmpresaHora}`)
+        Swal.fire({
+            icon: 'success',
+            title: `El monto aproximado por su asesoría es de $ ${totalEmpresaHora}`,
+            text:'En su correo recibirá el detalle de su consulta. ¡Muchas gracias por confiar en nosotros!',
+            showConfirmButton: true,
+            
+          })
 
     } else if ((inputServicio.value === ('Asesoría Empresarial' || 'Asesoria Empresarial' || 'asesoría empresarial' || 'asesoria empresarial' || 'asesoría Empresarial' || 'Asesoría empresarial' || 'Asesoria empresarial'|| 'ASESORIA EMPRESARIAL'||'ASESORÍA EMPRESARIAL'))
     && inputModalidad.value === ('Mes' || 'mes'|| 'MES')){
         
         clientesPresupuesto.push('Monto total: $'+totalEmpresaMes)
 
-    alert(`El monto aproximado por su asesoría es de $ ${totalEmpresaMes}`)
-    }
+          Swal.fire({
+            icon: 'success',
+            title: `El monto aproximado por su asesoría es de $ ${totalEmpresaMes}`,
+            text:'En su correo recibirá el detalle de su consulta. ¡Muchas gracias por confiar en nosotros!',
+            showConfirmButton: true,
+            
+          })
+        }
+   
 
     event.preventDefault();
 
     inputNombrePresupuesto.value = "";
+    inputEmail.value = "";
     inputServicio.value = "";
     inputModalidad.value = "";
     inputCantidad.value = "";
@@ -121,9 +155,9 @@ inputCalcular.addEventListener('click',(event) => {
 
 } )
      
-// Solicitar la info del localStorage
+    // Solicitar la info del localStorage
 
-console.log(localStorage.getItem('Cliente'))
+    console.log(localStorage.getItem('Cliente'))
 
 
 
@@ -141,4 +175,17 @@ console.log(localStorage.getItem('Cliente'))
 
 
 
+//    RUTA RELATIVA AL ARCHIVO JSON
 
+
+// fetch("/clientes.json")
+//     .then((response) => {
+//         return response.json();
+//     }).then ((clientes) => {
+//         console.log(clientes)
+//     });
+
+
+// Lo dejé comentado porque me tira este error
+//presupuestos.html:132 Access to fetch at 'file:///clientes.json' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: http, data, isolated-app, chrome-extension, chrome, https, chrome-untrusted.
+// Como que no me deja usar rutas relativas

@@ -63,10 +63,16 @@ enviarConsulta.addEventListener('click',(event) => {
 
     let cliente1 = JSON.parse(localStorage.getItem(clientesConsultaJSON))
 
-   
+    Swal.fire({
+        icon: 'success',
+        title: 'Su mensaje ha sido enviado.',
+        text:'En los próximos días recibirá una respuesta en su correo. ¡Muchas gracias por confiar en nosotros!',
+        showConfirmButton: true,
+    
+      })
   
 } )
 
-// Solicitar la info del localStorage
+// Solicitar información del localStorage
 
 console.log(localStorage.getItem('Cliente'))

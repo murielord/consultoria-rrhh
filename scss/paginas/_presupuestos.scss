@@ -5,31 +5,24 @@
 
 #presupuesto{
 
-        margin: 20px 250px 0px 350px;
-        padding: 10px 20px 5px 30px;
-        font-weight: 300;
-        color:$color-principal;
-        font-size: map-get($font-size, $key:texts);
-        border-color: $color-secundario;
-        border-radius: 10px;
-        display:grid;
-        grid-template-columns: 1;
-        grid-template-rows: repeat(1, 1fr);
-        grid-row-gap: 10px;
-        align-items: center;
-    
+    margin: 20px 250px 0px 350px;
+    padding: 10px 20px 5px 30px;
+    font-weight: 300;
+    color:$color-principal;
+    font-size: map-get($font-size, $key:texts);
+    border-color: $color-secundario;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: auto ;
+    justify-content: center;
+
+    .form{
+        width: 700px;
+        
+    }
 }
 
-// .formP{
-//     background-color:  rgba(49, 124, 99, 0.808);
-//     width: 500px;
-// }
-
-
-// .horas{
-//     display:flex;
-//     width:200px;
-// }
 
 .buttonP{
     margin-top: 30px;
